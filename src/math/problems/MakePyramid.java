@@ -15,5 +15,19 @@ public class MakePyramid {
          */
 
 
+        for(int i=1;i<=6;i++){
+            for(int A=6;A>=i;A--){
+                System.out.print(" ");
+            }
+            for(int B=1 ;B<=i;B++) {
+                System.out.print(" *");
+            }
+            System.out.println("");
+        }
+
+
+
+
+
     }
 }

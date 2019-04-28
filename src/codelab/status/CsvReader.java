@@ -21,6 +21,8 @@ public class CsvReader {
         String cvsSplitBy = ",";
         BufferedReader br = null;
         List<Trainee> roster = new ArrayList<Trainee>();
+        int totalquestions=0;
+        int studentsnum=0;
 
         try {
             br = new BufferedReader(new FileReader(csvFilePath));
@@ -33,6 +35,12 @@ public class CsvReader {
                 String[] name = line.split(cvsSplitBy);
                 roster.add(new Trainee(name[5].replace("\"", ""), name[4].replace("\"",
                         ""), Integer.parseInt(name[10])));
+                int marksnum=Integer.parseInt(name[10]);
+                totalquestions=totalquestions+marksnum;
+                studentsnum++;
+
+
+
             }
 
         } catch (IOException e) {
@@ -64,7 +72,7 @@ public class CsvReader {
                 System.out.println(student.getFirstName() + " " + student.getLastName() + " " + student.getNumberOfExercisesSolved());
             }
         }
-
+        System.out.println( "the avrage of codelab Class is : " +totalquestions/studentsnum+"  questions");
     }
 
 }

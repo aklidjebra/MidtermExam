@@ -16,6 +16,11 @@ public class CollectionView {
         map.put(5, "San Jose");
         map.put(6, "Seattle");
 
+        for (HashMap.Entry<Integer,String>city:map.entrySet()){
+            System.out.println(city.getKey()+"-->  "+city.getValue());
+        }
+
+
 
     }
 
