@@ -220,7 +220,7 @@ Difference between jUnit and testNG?
   parameterization, and more. It is inspired by JUnit and NUnit.
 
 What are the dependencies for this project?
--
+-Sometimes, you may need to invoke methods in a test case in a particular order,
 
 what is dependency injection in java?
 - In software engineering, dependency injection is a technique whereby one object

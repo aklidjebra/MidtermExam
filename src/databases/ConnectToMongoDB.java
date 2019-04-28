@@ -17,7 +17,7 @@ public class ConnectToMongoDB {
 
     public static MongoDatabase connectToMongoDB() {
         MongoClient mongoClient = new MongoClient();
-        mongoDatabase = mongoClient.getDatabase("students");
+        mongoDatabase = mongoClient.getDatabase("Students");
         System.out.println("Database Connected");
 
         return mongoDatabase;

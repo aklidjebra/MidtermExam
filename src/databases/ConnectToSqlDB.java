@@ -187,6 +187,7 @@ public class ConnectToSqlDB {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
+        System.out.println();
     }
 
     public void insertProfileToSqlTable(String tableName, String columnName1, String columnName2) {
